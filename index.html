@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "hed">
+        <h1>Weather Forcast</h1>
+    </div>
+    <div class = "form">
+        <form id = "inpCityForm">
+            <label for="cname">City name:</label>
+            <input type="text" id="cname" name="cname" placeholder="Enter Your City Name">
+            <button type="button" id = "submitbtn">Submit</button>
+        </form>
+    </div>
+    <div class="unit-toggle">
+        <label>
+            <input type="radio" name="unit" value="celsius" checked> Celsius
+        </label>
+        <label>
+            <input type="radio" name="unit" value="fahrenheit"> Fahrenheit
+        </label>
+    </div>
+    <div class="out">
+        <h3 id="currentCity"></h3>
+        <h3 id="currentTemp"></h3>
+        <h3 id="weatherDesc"></h3>
+        <div id="weatherIcon" class="weather-icon"></div>
+        <div class="forecast">
+            <h2>3-Day Weather Forecast</h2>
+            <div class="forecast-day" id="day1">
+                <h3 class="forecast-date"></h3>
+                <div class="forecast-icon"></div>
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day" id="day2">
+                <h3 class="forecast-date"></h3>
+                <div class="forecast-icon"></div>
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day" id="day3">
+                <h3 class="forecast-date"></h3>
+                <div class="forecast-icon"></div>
+                <p class="forecast-temp"></p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
